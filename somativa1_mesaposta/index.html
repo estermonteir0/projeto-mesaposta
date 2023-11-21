@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    
+    <!--cabeçalho-->
+    <header> 
+        <nav>
+            <ul>
+               <li><a class="active" href="index.html">Início</a></li> 
+               <li><a href="form.html">Contato</a></li>
+               <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--conteúdo-->
+    <main>
+
+        <div class="content">
+            <div class="content">
+
+                <h2>Loja de Mesa Posta</h2>
+                
+                <div class="first">
+    
+                    <div class="menu">
+                        <img class="imgStamp" src="img/red.jpg">
+                        <input class="modalButton" type="button" 
+         value="Detalhes..." onclick="openModal('Cor1');">
+                    </div>
+                    <div class="menu">
+                        <img class="imgStamp" src="img/white.webp">
+                        <input class="modalButton" type="button" 
+         value="Detalhes..." onclick="openModal('Cor2');">
+                    </div>
+                    <div class="menu">
+                        <img class="imgStamp" src="img/black.webp">
+                        <input class="modalButton" type="button" 
+         value="Detalhes..." onclick="openModal('Cor3');">
+                    </div>
+                    
+                </div>
+    
+                <div class="second">
+                    <div class="menu">
+                        <img class="imgStamp" src="img/gold.jpg">
+                        <input class="modalButton" type="button" 
+         value="Detalhes..." onclick="openModal('Cor4');">
+                    </div>
+                    <div class="menu">
+                        <img class="imgStamp" src="img/green.webp">
+                        <input class="modalButton" type="button" 
+         value="Detalhes..." onclick="openModal('Cor5');">
+                    </div>
+                    <div class="menu">
+                        <img class="imgStamp" src="img/pink.webp"> 
+                        <input class="modalButton" type="button" 
+         value="Detalhes..." onclick="openModal('Cor6');">
+                    </div>
+                </div>
+    
+                <div class="third">
+                    <div class="menu">
+                        <img class="imgStamp" src="img/talher1.jpg">
+                        <input class="modalButton" type="button" 
+         value="Detalhes..." onclick="openModal('Talher1');">
+                    </div>
+                    <div class="menu">
+                        <img class="imgStamp" src="img/talher2.jpg">
+                        <input class="modalButton" type="button" 
+         value="Detalhes..." onclick="openModal('Talher2');">
+                    </div>
+                </div>
+                
+            </div>
+    </main>
+
+    <!--rodapé-->
+    <footer>
+        &copy; 2023 Todos os direitos reservados
+    </footer>
+    
+    <!-- detalhes do modal -->
+    <div id="knowMore" class="modal">
+
+        <header>
+            <span onclick="closeModal();" class="topright">X</span>
+        </header>
+
+        <div>
+            <p id="txt1" class="infoH"></p> 
+            <p id="txt2" class="info"></p>
+            <p id="txt3" class="info"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    </div>
+
+</body>
+</html>

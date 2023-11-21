@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   
+     <!--cabeçalho-->
+     <header>
+        
+        <nav>
+            <ul>
+               <li><a href="index.html">Início</a></li> 
+               <li><a class="active" href="form.html">Contato</a></li>
+               <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--conteúdo-->
+    <main>
+
+        <div class="content">
+            <div class="content">
+                <h3>Deixe seu contato se quiser falar conosco!</h3>
+
+                <div class="contact-form">
+                    <form method="GET" action="form_action.html" >
+
+                        <div class="form-group">
+                            <label for="name"><i class="fa fa-user" aria-hidden="true"></i></label>
+                            <input type="text" name="name" id="name" placeholder="Nome" required>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="celular"><i class="fa fa-phone" aria-hidden="true"></i></label>
+                            <input type="phone" name="celular" id="celular" pattern="\(\d{2}\)\s\d{4,5}-\d{4}$"                    
+                            onkeydown="return mascaraTelefone(event)" placeholder="Celular" title="(xx) xxxxx-xxxx" required>
+                        </div><br>
+
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>Eu concordo com os <a href="#" class="term-service">termos de serviço</a></label>
+                        </div><br>
+
+                        <div class="form-group form-button">
+                            <input type="submit" class="form-submit" value="Enviar"> 
+                            <input type="reset"  class="form-submit" value="Limpar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
